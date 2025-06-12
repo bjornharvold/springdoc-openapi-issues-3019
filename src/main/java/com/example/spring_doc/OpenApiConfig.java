@@ -103,7 +103,9 @@
                                  )
                  )
                  // TODO comment this line out and the app will start successfully
-                 .addSchemas("amount", getSchemaWithDifferentDescription(MonetaryAmount.class, "Source total", "The total amount for this booking in property defined currency.", io.swagger.v3.oas.annotations.media.Schema.AccessMode.AUTO, true, null))
+                 .addSchemas("prop1", getSchemaWithDifferentDescription(PingResponse.class, "Response 1", "Custom response 1.", io.swagger.v3.oas.annotations.media.Schema.AccessMode.AUTO, true, null))
+                 .addSchemas("prop2", getSchemaWithDifferentDescription(PingResponse.class, "Response 2", "Custom response 2.", io.swagger.v3.oas.annotations.media.Schema.AccessMode.AUTO, true, null))
+//                 .addSchemas("amount", getSchemaWithDifferentDescription(MonetaryAmount.class, "Source total", "The total amount for this booking in property defined currency.", io.swagger.v3.oas.annotations.media.Schema.AccessMode.AUTO, true, null))
                  ;
 
          return new OpenAPI()
